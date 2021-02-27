@@ -3,52 +3,232 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C6412DAF34DC265726FF76 /* Pods_Motivation_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D29A8579993AA6BC02690BC /* Pods_Motivation_WidgetExtension.framework */; };
+		82913EE4696B5039300214E1 /* Pods_Motivation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473A8B3B806AC116E666234B /* Pods_Motivation.framework */; };
+		FB241D3E2526175200F9440F /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB241D3D2526175200F9440F /* UIImageColors.swift */; };
+		FB241D47252617DD00F9440F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB241D46252617DD00F9440F /* WidgetKit.framework */; };
+		FB241D49252617DD00F9440F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB241D48252617DD00F9440F /* SwiftUI.framework */; };
+		FB241D4F252617E100F9440F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB241D4E252617E100F9440F /* Assets.xcassets */; };
+		FB241D51252617E100F9440F /* Motivation_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FB241D4D252617DD00F9440F /* Motivation_Widget.intentdefinition */; };
+		FB241D52252617E100F9440F /* Motivation_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FB241D4D252617DD00F9440F /* Motivation_Widget.intentdefinition */; };
+		FB241D55252617E100F9440F /* Motivation WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB241D44252617DD00F9440F /* Motivation WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB2BB8B5253F380F00998206 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BB8B4253F380F00998206 /* FavoritesViewController.swift */; };
+		FB2BB8B9253F382D00998206 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BB8B8253F382D00998206 /* AddQuoteViewController.swift */; };
+		FB2BB8BD253F45AD00998206 /* swiftuiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BB8BC253F45AD00998206 /* swiftuiTableView.swift */; };
+		FB2BB8C1253F7BC600998206 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BB8C0253F7BC600998206 /* FavoritesTableViewCell.swift */; };
+		FB4E12F0254481C3006770FE /* AddQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E12EF254481C3006770FE /* AddQuoteView.swift */; };
+		FB4EDE99254B091D00333131 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB956B062544C30E009E5766 /* Database.swift */; };
 		FB75EE43252547A700B895EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75EE42252547A700B895EE /* AppDelegate.swift */; };
 		FB75EE45252547A700B895EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75EE44252547A700B895EE /* SceneDelegate.swift */; };
-		FB75EE47252547A700B895EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75EE46252547A700B895EE /* ViewController.swift */; };
+		FB75EE47252547A700B895EE /* WidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75EE46252547A700B895EE /* WidgetViewController.swift */; };
 		FB75EE4A252547A700B895EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB75EE48252547A700B895EE /* Main.storyboard */; };
 		FB75EE4C252547A900B895EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB75EE4B252547A900B895EE /* Assets.xcassets */; };
 		FB75EE4F252547A900B895EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB75EE4D252547A900B895EE /* LaunchScreen.storyboard */; };
+		FB79204A254772F00005F288 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB792049254772F00005F288 /* Colors.swift */; };
+		FB7D5EFF253A32F000704031 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D5EFE253A32EF00704031 /* WidgetView.swift */; };
+		FB838719253396990050D4CD /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB838718253396990050D4CD /* ColorPickerView.swift */; };
+		FB83871A253396990050D4CD /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB838718253396990050D4CD /* ColorPickerView.swift */; };
+		FB956AB32544911A009E5766 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB956AB22544911A009E5766 /* GoogleService-Info.plist */; };
+		FB956AE725449790009E5766 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB956AB22544911A009E5766 /* GoogleService-Info.plist */; };
+		FB956B072544C30E009E5766 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB956B062544C30E009E5766 /* Database.swift */; };
+		FB956B0B2544C78E009E5766 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB956B0A2544C78E009E5766 /* Quote.swift */; };
+		FB97BC27253648D5004AB67A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB97BC26253648D5004AB67A /* SettingsViewController.swift */; };
+		FBA6ED6D254AFA5900272767 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB956B0A2544C78E009E5766 /* Quote.swift */; };
+		FBA6ED70254AFA7E00272767 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB792049254772F00005F288 /* Colors.swift */; };
+		FBA6ED75254AFAD600272767 /* Motivation_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB241D4B252617DD00F9440F /* Motivation_Widget.swift */; };
+		FC07991D25AA4AEE0053326D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07991C25AA4AEE0053326D /* HomePageViewController.swift */; };
+		FC0E54E325D8286C00C51A6E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E54E225D8286C00C51A6E /* Storage.swift */; };
+		FC0E54E725D853D600C51A6E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E54E625D853D600C51A6E /* SearchViewController.swift */; };
+		FC0E554125DDB02000C51A6E /* SingleQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E554025DDB01E00C51A6E /* SingleQuoteViewController.swift */; };
+		FC36ADBE259B78CA000E95F7 /* mindful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC36ADBD259B78C9000E95F7 /* mindful.jpg */; };
+		FC36ADC2259B7B5E000E95F7 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC36ADC1259B7B5E000E95F7 /* TabbarController.swift */; };
+		FC36ADC6259D03B9000E95F7 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC36ADC5259D03B9000E95F7 /* WelcomePageViewController.swift */; };
+		FC36ADCA259E0D38000E95F7 /* BackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC36ADC9259E0D38000E95F7 /* BackgroundGradientView.swift */; };
+		FC36ADD0259E1B4F000E95F7 /* MindfulLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC36ADCF259E1B4E000E95F7 /* MindfulLogo.png */; };
+		FC4C75272555E76100146738 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C75262555E76100146738 /* FeedViewController.swift */; };
+		FC78D2E325B779940065DCEB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D2E225B779940065DCEB /* ProfilePage.swift */; };
+		FC78D2ED25B9E6970065DCEB /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D2EC25B9E6970065DCEB /* ProfilePageViewController.swift */; };
+		FC81E2DF25584C8B00EE50F6 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = FC81E2DE25584C8B00EE50F6 /* like.json */; };
+		FC81E2F7255AE46000EE50F6 /* NetworkSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81E2F6255AE46000EE50F6 /* NetworkSpeedTest.swift */; };
+		FC81E2FB255AF14600EE50F6 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = FC81E2FA255AF14600EE50F6 /* Empty.png */; };
+		FC9BA8FC258FE95500C4612D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9BA8FB258FE95500C4612D /* SignUpViewController.swift */; };
+		FC9BA900258FE96A00C4612D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9BA8FF258FE96A00C4612D /* LoginViewController.swift */; };
+		FC9BA904258FE97A00C4612D /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9BA903258FE97A00C4612D /* ForgotPassViewController.swift */; };
+		FCA1A31E25570EDD0096F2D0 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1A31D25570EDD0096F2D0 /* Variables.swift */; };
+		FCA1A32125570FE60096F2D0 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1A31D25570EDD0096F2D0 /* Variables.swift */; };
+		FCBDC023255C6B5E0071F9E7 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBDC022255C6B5E0071F9E7 /* plus.png */; };
+		FCDFD42F2593A6CA00BABC2B /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFD42E2593A6CA00BABC2B /* CategoryPickerView.swift */; };
+		FCDFD4332593ABF900BABC2B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDFD4322593ABF900BABC2B /* CategoryViewController.swift */; };
+		FCF72654256066DD00319D5D /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF72653256066DD00319D5D /* LocalNotificationManager.swift */; };
+		FCF726582560769F00319D5D /* NotificationSheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF726572560769F00319D5D /* NotificationSheduleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FB241D53252617E100F9440F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB75EE37252547A700B895EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB241D43252617DD00F9440F;
+			remoteInfo = "Motivation WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB241D59252617E100F9440F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB241D55252617E100F9440F /* Motivation WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		FB75EE3F252547A700B895EE /* Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0AEB362FA636C4147A2514 /* Pods-Motivation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.release.xcconfig"; path = "Target Support Files/Pods-Motivation/Pods-Motivation.release.xcconfig"; sourceTree = "<group>"; };
+		473A8B3B806AC116E666234B /* Pods_Motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E44CEF007EC967C337BF879 /* Pods-Motivation WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Motivation WidgetExtension/Pods-Motivation WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		81AF37E7059A8FD8BCE7DB22 /* Pods-Motivation WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Motivation WidgetExtension/Pods-Motivation WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		9D29A8579993AA6BC02690BC /* Pods_Motivation_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F22023E4E125EBB2AB647A /* Pods-Motivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.debug.xcconfig"; path = "Target Support Files/Pods-Motivation/Pods-Motivation.debug.xcconfig"; sourceTree = "<group>"; };
+		FB241D3D2526175200F9440F /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
+		FB241D44252617DD00F9440F /* Motivation WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Motivation WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB241D46252617DD00F9440F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FB241D48252617DD00F9440F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FB241D4B252617DD00F9440F /* Motivation_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivation_Widget.swift; sourceTree = "<group>"; };
+		FB241D4D252617DD00F9440F /* Motivation_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Motivation_Widget.intentdefinition; sourceTree = "<group>"; };
+		FB241D4E252617E100F9440F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB241D50252617E100F9440F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2BB8B4253F380F00998206 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		FB2BB8B8253F382D00998206 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
+		FB2BB8BC253F45AD00998206 /* swiftuiTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuiTableView.swift; sourceTree = "<group>"; };
+		FB2BB8C0253F7BC600998206 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		FB4E12EF254481C3006770FE /* AddQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteView.swift; sourceTree = "<group>"; };
+		FB75EE3F252547A700B895EE /* Mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75EE42252547A700B895EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB75EE44252547A700B895EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB75EE46252547A700B895EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB75EE49252547A700B895EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB75EE46252547A700B895EE /* WidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewController.swift; sourceTree = "<group>"; };
 		FB75EE4B252547A900B895EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FB75EE4E252547A900B895EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB75EE50252547A900B895EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB792049254772F00005F288 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FB7D5EFE253A32EF00704031 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		FB838718253396990050D4CD /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		FB956AB22544911A009E5766 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB956B062544C30E009E5766 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FB956B0A2544C78E009E5766 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		FB97BC26253648D5004AB67A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FBEA5294252BEAA4006C1F1C /* Motivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motivation.entitlements; sourceTree = "<group>"; };
+		FBEA5297252BEAB3006C1F1C /* Motivation WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Motivation WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		FC07991C25AA4AEE0053326D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		FC0E54E225D8286C00C51A6E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		FC0E54E625D853D600C51A6E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FC0E554025DDB01E00C51A6E /* SingleQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQuoteViewController.swift; sourceTree = "<group>"; };
+		FC36ADBD259B78C9000E95F7 /* mindful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mindful.jpg; sourceTree = "<group>"; };
+		FC36ADC1259B7B5E000E95F7 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		FC36ADC5259D03B9000E95F7 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		FC36ADC9259E0D38000E95F7 /* BackgroundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradientView.swift; sourceTree = "<group>"; };
+		FC36ADCF259E1B4E000E95F7 /* MindfulLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MindfulLogo.png; sourceTree = "<group>"; };
+		FC4C75262555E76100146738 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FC78D2E225B779940065DCEB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		FC78D2EC25B9E6970065DCEB /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		FC78D2F225B9E7B80065DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC78D2F325B9E7BA0065DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC81E2DE25584C8B00EE50F6 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
+		FC81E2F6255AE46000EE50F6 /* NetworkSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedTest.swift; sourceTree = "<group>"; };
+		FC81E2FA255AF14600EE50F6 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Empty.png; sourceTree = "<group>"; };
+		FC9BA8FB258FE95500C4612D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC9BA8FF258FE96A00C4612D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC9BA903258FE97A00C4612D /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		FCA1A31D25570EDD0096F2D0 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		FCA1A324255719C20096F2D0 /* Motivation WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Motivation WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		FCBDC022255C6B5E0071F9E7 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		FCDFD42E2593A6CA00BABC2B /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		FCDFD4322593ABF900BABC2B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FCF3ACF3255DD8C300729874 /* AvenirNext.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvenirNext.ttc; sourceTree = "<group>"; };
+		FCF3ACF6255DED2900729874 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FCF72653256066DD00319D5D /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		FCF726572560769F00319D5D /* NotificationSheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB241D41252617DD00F9440F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB241D49252617DD00F9440F /* SwiftUI.framework in Frameworks */,
+				FB241D47252617DD00F9440F /* WidgetKit.framework in Frameworks */,
+				21C6412DAF34DC265726FF76 /* Pods_Motivation_WidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB75EE3C252547A700B895EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82913EE4696B5039300214E1 /* Pods_Motivation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C5B37A12BAA9BE4188B3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1F22023E4E125EBB2AB647A /* Pods-Motivation.debug.xcconfig */,
+				1C0AEB362FA636C4147A2514 /* Pods-Motivation.release.xcconfig */,
+				6E44CEF007EC967C337BF879 /* Pods-Motivation WidgetExtension.debug.xcconfig */,
+				81AF37E7059A8FD8BCE7DB22 /* Pods-Motivation WidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB241D45252617DD00F9440F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB241D46252617DD00F9440F /* WidgetKit.framework */,
+				FB241D48252617DD00F9440F /* SwiftUI.framework */,
+				473A8B3B806AC116E666234B /* Pods_Motivation.framework */,
+				9D29A8579993AA6BC02690BC /* Pods_Motivation_WidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB241D4A252617DD00F9440F /* Motivation Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FB241D4B252617DD00F9440F /* Motivation_Widget.swift */,
+				FB241D4D252617DD00F9440F /* Motivation_Widget.intentdefinition */,
+				FB241D4E252617E100F9440F /* Assets.xcassets */,
+				FB241D50252617E100F9440F /* Info.plist */,
+			);
+			path = "Motivation Widget";
+			sourceTree = "<group>";
+		};
 		FB75EE36252547A700B895EE = {
 			isa = PBXGroup;
 			children = (
+				FCA1A324255719C20096F2D0 /* Motivation WidgetExtension.entitlements */,
 				FB75EE41252547A700B895EE /* Motivation */,
+				FB241D4A252617DD00F9440F /* Motivation Widget */,
+				FB241D45252617DD00F9440F /* Frameworks */,
 				FB75EE40252547A700B895EE /* Products */,
+				37C5B37A12BAA9BE4188B3CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		FB75EE40252547A700B895EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB75EE3F252547A700B895EE /* Motivation.app */,
+				FB75EE3F252547A700B895EE /* Mindful.app */,
+				FB241D44252617DD00F9440F /* Motivation WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,35 +236,163 @@
 		FB75EE41252547A700B895EE /* Motivation */ = {
 			isa = PBXGroup;
 			children = (
+				FB75EE50252547A900B895EE /* Info.plist */,
 				FB75EE42252547A700B895EE /* AppDelegate.swift */,
-				FB75EE44252547A700B895EE /* SceneDelegate.swift */,
-				FB75EE46252547A700B895EE /* ViewController.swift */,
 				FB75EE48252547A700B895EE /* Main.storyboard */,
 				FB75EE4B252547A900B895EE /* Assets.xcassets */,
+				FC36ADBD259B78C9000E95F7 /* mindful.jpg */,
+				FCBDC022255C6B5E0071F9E7 /* plus.png */,
+				FC36ADCF259E1B4E000E95F7 /* MindfulLogo.png */,
+				FC81E2FA255AF14600EE50F6 /* Empty.png */,
+				FCF3ACF3255DD8C300729874 /* AvenirNext.ttc */,
+				FCF3ACF6255DED2900729874 /* Montserrat-ExtraBold.ttf */,
+				FC81E2DD25584C6200EE50F6 /* Lottie */,
+				FC6A7FB92556C78A00F59DCD /* Modals */,
+				FC6A7FA72556C5FC00F59DCD /* Database */,
+				FC6A7FA82556C61C00F59DCD /* Constants */,
+				FC6A7FAD2556C6AC00F59DCD /* ViewControllers */,
+				FC6A7FAE2556C6EC00F59DCD /* SwiftUIViews */,
+				FC6A7FBC2556C7B700F59DCD /* HelperFunctions */,
 				FB75EE4D252547A900B895EE /* LaunchScreen.storyboard */,
-				FB75EE50252547A900B895EE /* Info.plist */,
+				FB956AB22544911A009E5766 /* GoogleService-Info.plist */,
+				FBEA5297252BEAB3006C1F1C /* Motivation WidgetExtension.entitlements */,
+				FBEA5294252BEAA4006C1F1C /* Motivation.entitlements */,
 			);
 			path = Motivation;
+			sourceTree = "<group>";
+		};
+		FC6A7FA72556C5FC00F59DCD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FB956B062544C30E009E5766 /* Database.swift */,
+				FC0E54E225D8286C00C51A6E /* Storage.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FC6A7FA82556C61C00F59DCD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FB792049254772F00005F288 /* Colors.swift */,
+				FCA1A31D25570EDD0096F2D0 /* Variables.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FC6A7FAD2556C6AC00F59DCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC9BA8F6258FE92100C4612D /* LoginViews */,
+				FB75EE46252547A700B895EE /* WidgetViewController.swift */,
+				FC07991C25AA4AEE0053326D /* HomePageViewController.swift */,
+				FC0E54E625D853D600C51A6E /* SearchViewController.swift */,
+				FC36ADC1259B7B5E000E95F7 /* TabbarController.swift */,
+				FB97BC26253648D5004AB67A /* SettingsViewController.swift */,
+				FB2BB8B4253F380F00998206 /* FavoritesViewController.swift */,
+				FB2BB8B8253F382D00998206 /* AddQuoteViewController.swift */,
+				FC4C75262555E76100146738 /* FeedViewController.swift */,
+				FB7D5EFE253A32EF00704031 /* WidgetView.swift */,
+				FCDFD42E2593A6CA00BABC2B /* CategoryPickerView.swift */,
+				FC0E554025DDB01E00C51A6E /* SingleQuoteViewController.swift */,
+				FCDFD4322593ABF900BABC2B /* CategoryViewController.swift */,
+				FC78D2EC25B9E6970065DCEB /* ProfilePageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC6A7FAE2556C6EC00F59DCD /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB838718253396990050D4CD /* ColorPickerView.swift */,
+				FB4E12EF254481C3006770FE /* AddQuoteView.swift */,
+				FCF726572560769F00319D5D /* NotificationSheduleView.swift */,
+				FC78D2E225B779940065DCEB /* ProfilePage.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		FC6A7FB92556C78A00F59DCD /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				FB956B0A2544C78E009E5766 /* Quote.swift */,
+				FCF72653256066DD00319D5D /* LocalNotificationManager.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		FC6A7FBC2556C7B700F59DCD /* HelperFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				FC36ADC9259E0D38000E95F7 /* BackgroundGradientView.swift */,
+				FB75EE44252547A700B895EE /* SceneDelegate.swift */,
+				FB2BB8BC253F45AD00998206 /* swiftuiTableView.swift */,
+				FB2BB8C0253F7BC600998206 /* FavoritesTableViewCell.swift */,
+				FB241D3D2526175200F9440F /* UIImageColors.swift */,
+				FC81E2F6255AE46000EE50F6 /* NetworkSpeedTest.swift */,
+			);
+			path = HelperFunctions;
+			sourceTree = "<group>";
+		};
+		FC81E2DD25584C6200EE50F6 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				FC81E2DE25584C8B00EE50F6 /* like.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		FC9BA8F6258FE92100C4612D /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				FC9BA8FB258FE95500C4612D /* SignUpViewController.swift */,
+				FC9BA8FF258FE96A00C4612D /* LoginViewController.swift */,
+				FC9BA903258FE97A00C4612D /* ForgotPassViewController.swift */,
+				FC36ADC5259D03B9000E95F7 /* WelcomePageViewController.swift */,
+			);
+			path = LoginViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB75EE3E252547A700B895EE /* Motivation */ = {
+		FB241D43252617DD00F9440F /* Motivation WidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB75EE53252547A900B895EE /* Build configuration list for PBXNativeTarget "Motivation" */;
+			buildConfigurationList = FB241D56252617E100F9440F /* Build configuration list for PBXNativeTarget "Motivation WidgetExtension" */;
 			buildPhases = (
-				FB75EE3B252547A700B895EE /* Sources */,
-				FB75EE3C252547A700B895EE /* Frameworks */,
-				FB75EE3D252547A700B895EE /* Resources */,
+				6BCC2CA114AA6A97BE72BB33 /* [CP] Check Pods Manifest.lock */,
+				FB241D40252617DD00F9440F /* Sources */,
+				FB241D41252617DD00F9440F /* Frameworks */,
+				FB241D42252617DD00F9440F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "Motivation WidgetExtension";
+			productName = "Motivation WidgetExtension";
+			productReference = FB241D44252617DD00F9440F /* Motivation WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FB75EE3E252547A700B895EE /* Motivation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB75EE53252547A900B895EE /* Build configuration list for PBXNativeTarget "Motivation" */;
+			buildPhases = (
+				B375F2853529016B0DE4415F /* [CP] Check Pods Manifest.lock */,
+				FB75EE3B252547A700B895EE /* Sources */,
+				FB75EE3C252547A700B895EE /* Frameworks */,
+				FB75EE3D252547A700B895EE /* Resources */,
+				FB241D59252617E100F9440F /* Embed App Extensions */,
+				86396BE524D4996BEF342181 /* [CP] Embed Pods Frameworks */,
+				8B8CE6578A193F3CC39DAD4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB241D54252617E100F9440F /* PBXTargetDependency */,
+			);
 			name = Motivation;
 			productName = Motivation;
-			productReference = FB75EE3F252547A700B895EE /* Motivation.app */;
+			productReference = FB75EE3F252547A700B895EE /* Mindful.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,6 +404,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					FB241D43252617DD00F9440F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					FB75EE3E252547A700B895EE = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -115,41 +426,192 @@
 			projectRoot = "";
 			targets = (
 				FB75EE3E252547A700B895EE /* Motivation */,
+				FB241D43252617DD00F9440F /* Motivation WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FB241D42252617DD00F9440F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB241D4F252617E100F9440F /* Assets.xcassets in Resources */,
+				FB956AE725449790009E5766 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB75EE3D252547A700B895EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB75EE4F252547A900B895EE /* LaunchScreen.storyboard in Resources */,
+				FC36ADBE259B78CA000E95F7 /* mindful.jpg in Resources */,
 				FB75EE4C252547A900B895EE /* Assets.xcassets in Resources */,
+				FC36ADD0259E1B4F000E95F7 /* MindfulLogo.png in Resources */,
+				FC81E2DF25584C8B00EE50F6 /* like.json in Resources */,
+				FC81E2FB255AF14600EE50F6 /* Empty.png in Resources */,
 				FB75EE4A252547A700B895EE /* Main.storyboard in Resources */,
+				FCBDC023255C6B5E0071F9E7 /* plus.png in Resources */,
+				FB956AB32544911A009E5766 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BCC2CA114AA6A97BE72BB33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motivation WidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86396BE524D4996BEF342181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8CE6578A193F3CC39DAD4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motivation/Pods-Motivation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B375F2853529016B0DE4415F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motivation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FB241D40252617DD00F9440F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB83871A253396990050D4CD /* ColorPickerView.swift in Sources */,
+				FB241D51252617E100F9440F /* Motivation_Widget.intentdefinition in Sources */,
+				FCA1A32125570FE60096F2D0 /* Variables.swift in Sources */,
+				FBA6ED75254AFAD600272767 /* Motivation_Widget.swift in Sources */,
+				FBA6ED70254AFA7E00272767 /* Colors.swift in Sources */,
+				FB4EDE99254B091D00333131 /* Database.swift in Sources */,
+				FBA6ED6D254AFA5900272767 /* Quote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB75EE3B252547A700B895EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB75EE47252547A700B895EE /* ViewController.swift in Sources */,
+				FC78D2E325B779940065DCEB /* ProfilePage.swift in Sources */,
+				FCF72654256066DD00319D5D /* LocalNotificationManager.swift in Sources */,
+				FC81E2F7255AE46000EE50F6 /* NetworkSpeedTest.swift in Sources */,
+				FB75EE47252547A700B895EE /* WidgetViewController.swift in Sources */,
+				FB4E12F0254481C3006770FE /* AddQuoteView.swift in Sources */,
+				FC9BA904258FE97A00C4612D /* ForgotPassViewController.swift in Sources */,
 				FB75EE43252547A700B895EE /* AppDelegate.swift in Sources */,
+				FC78D2ED25B9E6970065DCEB /* ProfilePageViewController.swift in Sources */,
+				FC9BA8FC258FE95500C4612D /* SignUpViewController.swift in Sources */,
+				FCA1A31E25570EDD0096F2D0 /* Variables.swift in Sources */,
+				FB79204A254772F00005F288 /* Colors.swift in Sources */,
+				FCDFD42F2593A6CA00BABC2B /* CategoryPickerView.swift in Sources */,
+				FB956B072544C30E009E5766 /* Database.swift in Sources */,
+				FB956B0B2544C78E009E5766 /* Quote.swift in Sources */,
+				FC36ADC2259B7B5E000E95F7 /* TabbarController.swift in Sources */,
+				FC36ADC6259D03B9000E95F7 /* WelcomePageViewController.swift in Sources */,
+				FB241D52252617E100F9440F /* Motivation_Widget.intentdefinition in Sources */,
+				FC9BA900258FE96A00C4612D /* LoginViewController.swift in Sources */,
+				FB838719253396990050D4CD /* ColorPickerView.swift in Sources */,
+				FC36ADCA259E0D38000E95F7 /* BackgroundGradientView.swift in Sources */,
+				FC0E54E725D853D600C51A6E /* SearchViewController.swift in Sources */,
+				FC0E554125DDB02000C51A6E /* SingleQuoteViewController.swift in Sources */,
+				FCDFD4332593ABF900BABC2B /* CategoryViewController.swift in Sources */,
 				FB75EE45252547A700B895EE /* SceneDelegate.swift in Sources */,
+				FC4C75272555E76100146738 /* FeedViewController.swift in Sources */,
+				FC0E54E325D8286C00C51A6E /* Storage.swift in Sources */,
+				FB7D5EFF253A32F000704031 /* WidgetView.swift in Sources */,
+				FB2BB8BD253F45AD00998206 /* swiftuiTableView.swift in Sources */,
+				FB241D3E2526175200F9440F /* UIImageColors.swift in Sources */,
+				FB2BB8C1253F7BC600998206 /* FavoritesTableViewCell.swift in Sources */,
+				FCF726582560769F00319D5D /* NotificationSheduleView.swift in Sources */,
+				FB2BB8B5253F380F00998206 /* FavoritesViewController.swift in Sources */,
+				FB97BC27253648D5004AB67A /* SettingsViewController.swift in Sources */,
+				FB2BB8B9253F382D00998206 /* AddQuoteViewController.swift in Sources */,
+				FC07991D25AA4AEE0053326D /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FB241D54252617E100F9440F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB241D43252617DD00F9440F /* Motivation WidgetExtension */;
+			targetProxy = FB241D53252617E100F9440F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FB75EE48252547A700B895EE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB75EE49252547A700B895EE /* Base */,
+				FC78D2F225B9E7B80065DCEB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -157,7 +619,7 @@
 		FB75EE4D252547A900B895EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB75EE4E252547A900B895EE /* Base */,
+				FC78D2F325B9E7BA0065DCEB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,6 +627,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FB241D57252617E100F9440F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E44CEF007EC967C337BF879 /* Pods-Motivation WidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Motivation WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DH78Z69JN;
+				INFOPLIST_FILE = "Motivation Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sahlan.Motivation.Motivation-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB241D58252617E100F9440F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AF37E7059A8FD8BCE7DB22 /* Pods-Motivation WidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Motivation WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9DH78Z69JN;
+				INFOPLIST_FILE = "Motivation Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sahlan.Motivation.Motivation-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FB75EE51252547A900B895EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -216,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +783,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,18 +795,23 @@
 		};
 		FB75EE54252547A900B895EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F22023E4E125EBB2AB647A /* Pods-Motivation.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DH78Z69JN;
 				INFOPLIST_FILE = Motivation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = Sahlan.Motivation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mindful;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,18 +819,23 @@
 		};
 		FB75EE55252547A900B895EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0AEB362FA636C4147A2514 /* Pods-Motivation.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DH78Z69JN;
 				INFOPLIST_FILE = Motivation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = Sahlan.Motivation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mindful;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,6 +844,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB241D56252617E100F9440F /* Build configuration list for PBXNativeTarget "Motivation WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB241D57252617E100F9440F /* Debug */,
+				FB241D58252617E100F9440F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB75EE3A252547A700B895EE /* Build configuration list for PBXProject "Motivation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
